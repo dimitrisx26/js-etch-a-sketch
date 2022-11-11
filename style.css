@@ -61,13 +61,19 @@ div.header>div.btnContainer>button:hover {
 }
 
 .gridContainer {
-    background-color: #ffff;
-    height: 520px;
-    width: 520px;
+    background: #ffff;
+    height: 500px;
+    width: 500px;
     border:  3px solid rgb(118, 118, 118);
     box-shadow: 10px 10px #000000a1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 .cell {
-    
+    border: 0.5px solid #000000a1;
+    width: 30px;
+    height: 30px;
 }

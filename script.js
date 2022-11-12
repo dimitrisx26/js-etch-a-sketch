@@ -1,13 +1,13 @@
 const grid = document.querySelector("body > div > div.gridContainer");
 const buttons = document.querySelectorAll("body > div > div.header > div > button")
 
-let n = 16;
+let gridSize = 16;
 
-function createGrid(n) {
-    for (let i = 0; i < n; i++) {
-        for (let z = 0; z < n; z++) {
+function createGrid(gridSize) {
+    for (let i = 0; i < gridSize; i++) {
+        for (let z = 0; z < gridSize; z++) {
             cell = document.createElement("div");
-            cell.className = `cell${n}`;
+            cell.className = `cell${gridSize}`;
             grid.appendChild(cell);
         };
         
@@ -20,10 +20,10 @@ buttons.forEach(button => {
             while (grid.hasChildNodes()) {
                 grid.removeChild(grid.firstChild);
             }
-            createGrid(n); 
+            createGrid(gridSize); 
             
         } else {
-            const gridSize = button.value;
+            gridSize = button.value;
             while (grid.hasChildNodes()) {
                 grid.removeChild(grid.firstChild);
             }
@@ -41,4 +41,4 @@ grid.addEventListener("mouseover", function (e) {
 });
 
 
-createGrid(n);
+createGrid(gridSize);

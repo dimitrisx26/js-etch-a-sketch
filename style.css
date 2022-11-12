@@ -72,8 +72,24 @@ div.header>div.btnContainer>button:hover {
     justify-content: center;
 }
 
-.cell {
+.cell16 {
     border: 0.5px solid #000000a1;
-    width: 30px;
-    height: 30px;
+    width: 30.2px;
+    height: 30.2px;
+}
+
+.cell32 {
+    border: 0.5px solid #000000a1;
+    width: 14.6px;
+    height: 14.6px;
+}
+
+.cell64 {
+    border: 0.5px solid #000000a1;
+    width: 6.8px;
+    height: 6.8px;
+}
+
+.selected {
+    background: black;
 }
